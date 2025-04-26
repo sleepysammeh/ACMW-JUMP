@@ -1,0 +1,449 @@
+/* Your existing CSS... */
+@import url('https://fonts.googleapis.com/css2?family=ComicSansMS:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.match-questions {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: url("./match_bgimg/match_bg.jpg");
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+.match-questions {
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  padding: 20px;
+  position: relative;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.quiz-header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.user-info {
+  text-align: right;
+}
+
+.quiz-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.powerups {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.powerup-btn {
+  background-color: #8a2be2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 150px;
+  height:60px;
+}
+
+.fire-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+
+.power-ups {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Centering the buttons */
+  margin-bottom: 20px; /* Adding space between the buttons and other elements */
+}
+
+
+
+.score {
+  font-size: 16px;
+  text-align: right;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.columns-container {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.questions, .answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.question, .answer {
+  padding: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  text-align: center;
+}
+
+
+
+.question.selected {
+  background: #6F2DA8;
+  color: #ffffff;
+}
+
+.answer.correct {
+  background: #00cc66;
+  color: #ffffff;
+}
+
+.answer.incorrect {
+  background: #ff3300;
+  color: #ffffff;
+}
+
+.question:hover, .answer:hover {
+  background: #6F2DA8;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.check-btn-container {
+  margin-top: 20px;
+}
+
+.check-btn {
+  padding: 10px 20px;
+  background: #6F2DA8;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.check-btn:hover {
+  background: #9966cb;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.popup-content p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.close-btn {
+  padding: 10px 20px;
+  background: #6F2DA8;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.close-btn:hover {
+  background: #9966cb;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333333;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 10;
+  display: none;
+}
+
+.power-up-btn:hover .tooltip {
+  display: block;
+}
+
+@keyframes backgroundMove {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .score {
+    font-size: 1.2em;
+  }
+
+  .question, .answer {
+    font-size: 1em;
+    padding: 8px;
+  }
+
+  .check-btn {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+}
+
+
+/* Common button styling for Eliminate, Hint, and Documentation */
+.power-up-btn,
+.doc-button {
+  background-color: #4A00E0; /* Dark Purple */
+  background-image: linear-gradient(315deg, #4A00E0 0%, #8E2DE2 74%); /* Gradient */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px; /* Adjust padding for uniform size */
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  min-width: 130px; /* Ensure uniform width */
+  text-align: center;
+  margin: 0 5px; /* Adjust spacing */
+}
+
+/* Hover effect for all buttons */
+.power-up-btn:hover,
+.doc-button:hover {
+  background-color: #8E2DE2; /* New color on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.doc-overlay {
+  display: block; /* Ensure the overlay is visible */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;; /* Ensure proper transparency */
+  background: rgba(74, 0, 224, 0.85); /* Transparent purple background */
+  z-index: 999; /* Ensure it is below the modal but above other content */
+}
+
+/* Documentation modal styling */
+.doc-modal {
+  display: block; /* Ensure the modal is visible */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(315deg, rgba(74, 0, 224, 0.7) 0%, rgba(142, 45, 226, 0.7) 74%); /* Translucent gradient */
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  z-index: 1000; /* Ensure it is above the overlay */
+  width: 90%; /* Default width for responsiveness */
+  max-width: 500px; /* Max width to prevent excessive enlargement */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Text color inside the documentation modal */
+.doc-modal h2,
+.doc-modal p {
+  color: white; /* Ensure text is white */
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: linear-gradient(135deg, rgba(34, 0, 85, 0.85), rgba(0, 0, 0, 0.85)); /* Dark purple to black gradient */
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* Ensure vertical layout */
+  justify-content: space-between; /* Space between heading, content, and button */
+  align-items: center; /* Center content horizontally */
+}
+
+.modal-content h2 {
+  margin-top: 0; /* Remove default margin */
+  margin-bottom: 20px; /* Add space below heading */
+  text-align: center;
+  width: 100%; /* Ensure the heading takes full width */
+}
+
+.modal-content p {
+  flex: 1; /* Allow the content to take up remaining space */
+  text-align: center;
+  overflow-y: auto; /* Enable scrolling if content is too large */
+  width: 100%;
+}
+
+.modal-content .close-button {
+  margin-bottom: 20px; /* Add space above the button */
+  align-self: center; /* Center the button horizontally */
+}
+
+@media (max-width: 768px) {
+  .doc-modal {
+    width: 95%; /* Increase width on smaller screens */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .doc-modal h2 {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+
+  .doc-modal p {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .doc-modal {
+    width: 100%; /* Full width on very small screens */
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .doc-modal h2 {
+    font-size: 1.2em; /* Further adjust font size */
+  }
+
+  .doc-modal p {
+    font-size: 0.9em; /* Further adjust font size */
+  }
+}
+
+#powerups{
+  width: 150px;
+  height: 60px;
+  border: none;
+  background-color: #8a2be2;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-right: 20px;
+}
