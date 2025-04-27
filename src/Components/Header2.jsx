@@ -10,8 +10,8 @@ function Header() {
         <h1 className="text-3xl font-bold text-black">Mission: The Launch 🚀</h1>
       </div>
       <div className="flex flex-col items-end">
-        <h1 className="mt-2 text-black" style={{marginRight:'10px'}}>Astronaut Name: {username}</h1>
-        <h1 className="mt-2 text-black" style={{ marginBottom: '15px' , marginTop: '2px' , marginRight : '10px'}}>Astronaut Rank: {rank}</h1>
+        <h1 className="mt-2 text-black" style={{marginRight:'10px'}}>Name: {username}</h1>
+        <h1 className="mt-2 text-black" style={{ marginBottom: '15px' , marginTop: '2px' , marginRight : '10px'}}>Rank: {rank}</h1>
       </div>
     </header>
   );
