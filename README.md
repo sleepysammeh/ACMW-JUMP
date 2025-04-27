@@ -1,3 +1,11 @@
+
+# DESCRIPTION OF PROJECT
+A website created to solve the problem of ACMW and other clubs which commonly hold quizzes on their online social media platforms but are unable to efficiently track the progress of participants; this program allows participants to access and participate in quizzes with ease.
+
+# MENTEE CONTRIBUTION
+Samrita: dealt with front-end aspects.
+Mariah: dealt with back-end aspects.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
