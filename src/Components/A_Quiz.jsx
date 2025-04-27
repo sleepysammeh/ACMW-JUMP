@@ -37,21 +37,21 @@ const MissionPlanetHopper = ({ setQuizPage }) => {
               <span className="text-5xl mr-4">✨</span>
               <div>
                <h2 className="text-2xl font-semibold text-black">Tech!</h2>
-              <p className="text-lg text-black">Learn about the computing knowledge!</p>
+              <p className="text-lg text-black">Learn about the web development!</p>
               </div>
             </div>
             <button 
               onClick={handleQuizPage} 
               className="w-full bg-white hover:bg-pink-700 text-black font-bold py-3 px-6 rounded-full text-xl transition duration-300 ease-in-out transform hover:scale-105 shadow-lg"
             >
-              Start Mission!!
+              Start!
             </button>
             
           </div>
 
           <div className="md:w-2/5 flex flex-col">
             <div className="bg-white rounded-t-lg p-2 text-center font-bold text-xl text-black">
-              Qission Details
+              Mission Details
             </div>
             <div className="bg-white rounded-b-lg p-4 shadow-inner flex-grow overflow-y-auto max-h-60 text-black">
               <p className="text-lg">
