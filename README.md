@@ -2,9 +2,29 @@
 # DESCRIPTION OF PROJECT
 A website created to solve the problem of ACMW and other clubs which commonly hold quizzes on their online social media platforms but are unable to efficiently track the progress of participants; this program allows participants to access and participate in quizzes with ease.
 
+- Key Features
+(i) *Firebase Integration*:  
+   Firebase is at the heart of the platform, offering real-time database capabilities that ensure participant data is updated instantaneously during quizzes. Additionally, Firebase Authentication provides secure and seamless user login, ensuring both ease of access and data protection.
+
+(ii) *Node.js Backend*:  
+   The backend of this platform is built using Node.js, a powerful, event-driven JavaScript runtime. It facilitates quick and scalable handling of server-side operations, such as quiz submissions, scoring logic, and user management, ensuring a smooth experience even with high traffic.
+
+(iii) *React Frontend*:  
+   Built with React, the platform’s user interface is dynamic and highly responsive. React's component-based architecture ensures efficient rendering and allows for modular, reusable UI elements, making it easy to extend or customize functionalities as needed.
+
+(iv) *Tailwind CSS*:  
+   Tailwind CSS drives the visual design, offering a utility-first framework for crafting modern, responsive, and visually stunning interfaces. By using pre-built classes, developers can quickly achieve sleek designs without compromising on uniqueness or adaptability.
+
+- How to Get Started (GitHub Integration):
+(i) Fork the Repository: Create your own copy of the project.
+(ii) Clone the Repository: Download the repository to your local machine using git clone.
+(iii) Install Dependencies: Navigate to the project directory and run npm install to set up all required packages.
+(iv) Run the Project: Use npm start to launch the project on your local server.
+(v) Contribute: Push changes and submit pull requests to contribute to the project’s development.
+
 # MENTEE CONTRIBUTION
-Samrita: dealt with front-end aspects. <br>
-Mariah: dealt with back-end aspects.
+Samrita: dealt with frontend aspects and learnt tailwind and firebase concepts and applied them. <br>
+Mariah: dealt with back-end development and worked with the structure of the program.
 
 # Getting Started with Create React App
 
