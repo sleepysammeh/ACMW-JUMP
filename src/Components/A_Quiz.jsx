@@ -29,15 +29,15 @@ const MissionPlanetHopper = ({ setQuizPage }) => {
       
       <div className="w-full max-w-4xl bg-opacity-80 rounded-lg p-6 relative backdrop-filter backdrop-blur-sm shadow-2xl mb-20">
 
-        <h1 className="text-4xl font-bold mb-6 text-center bg-white text-black rounded-full px-6 py-2">Mission III</h1>
+        <h1 className="text-4xl font-bold mb-6 text-center bg-white text-black rounded-full px-6 py-2">Quiz III</h1>
         
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex-grow">
             <div className="bg-white rounded-lg p-4 flex items-center mb-4 shadow-md">
               <span className="text-5xl mr-4">✨</span>
               <div>
-               <h2 className="text-2xl font-semibold text-black">To the Stars!</h2>
-              <p className="text-lg text-black">Learn about the stars and their shapes!</p>
+               <h2 className="text-2xl font-semibold text-black">Tech!</h2>
+              <p className="text-lg text-black">Learn about the computing knowledge!</p>
               </div>
             </div>
             <button 
@@ -51,17 +51,17 @@ const MissionPlanetHopper = ({ setQuizPage }) => {
 
           <div className="md:w-2/5 flex flex-col">
             <div className="bg-white rounded-t-lg p-2 text-center font-bold text-xl text-black">
-              Mission Details
+              Qission Details
             </div>
             <div className="bg-white rounded-b-lg p-4 shadow-inner flex-grow overflow-y-auto max-h-60 text-black">
               <p className="text-lg">
-                In this mission we explore fascinating concepts like:
+                In this quiz we explore fascinating concepts like:
                 <br /><br />
-                • Stars in our sky
+                • TailWind
                 <br />
-                • Different shapes they make in the night
+                • Javascript
                 <br />
-                • 5 new constellations
+                • HTML
               </p>
             </div>
           </div>
