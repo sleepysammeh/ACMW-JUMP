@@ -3,7 +3,7 @@
 A website created to solve the problem of ACMW and other clubs which commonly hold quizzes on their online social media platforms but are unable to efficiently track the progress of participants; this program allows participants to access and participate in quizzes with ease.
 
 # MENTEE CONTRIBUTION
-Samrita: dealt with front-end aspects.
+Samrita: dealt with front-end aspects. <br>
 Mariah: dealt with back-end aspects.
 
 # Getting Started with Create React App
