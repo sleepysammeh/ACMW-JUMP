@@ -2,7 +2,7 @@
 # DESCRIPTION OF PROJECT
 A website created to solve the problem of ACMW and other clubs which commonly hold quizzes on their online social media platforms but are unable to efficiently track the progress of participants; this program allows participants to access and participate in quizzes with ease.
 
-- Key Features
+- Key Features <br>
 (i) *Firebase Integration*:  
    Firebase is at the heart of the platform, offering real-time database capabilities that ensure participant data is updated instantaneously during quizzes. Additionally, Firebase Authentication provides secure and seamless user login, ensuring both ease of access and data protection.
 
