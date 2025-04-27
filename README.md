@@ -3,6 +3,7 @@
 A website created to solve the problem of ACMW and other clubs which commonly hold quizzes on their online social media platforms but are unable to efficiently track the progress of participants; this program allows participants to access and participate in quizzes with ease.
 
 - Key Features <br>
+
 (i) *Firebase Integration*:  
    Firebase is at the heart of the platform, offering real-time database capabilities that ensure participant data is updated instantaneously during quizzes. Additionally, Firebase Authentication provides secure and seamless user login, ensuring both ease of access and data protection.
 
@@ -15,12 +16,12 @@ A website created to solve the problem of ACMW and other clubs which commonly ho
 (iv) *Tailwind CSS*:  
    Tailwind CSS drives the visual design, offering a utility-first framework for crafting modern, responsive, and visually stunning interfaces. By using pre-built classes, developers can quickly achieve sleek designs without compromising on uniqueness or adaptability.
 
-- How to Get Started (GitHub Integration):
-(i) Fork the Repository: Create your own copy of the project.
-(ii) Clone the Repository: Download the repository to your local machine using git clone.
-(iii) Install Dependencies: Navigate to the project directory and run npm install to set up all required packages.
-(iv) Run the Project: Use npm start to launch the project on your local server.
-(v) Contribute: Push changes and submit pull requests to contribute to the project’s development.
+- How to Get Started (GitHub Integration): <br>
+(i) Fork the Repository: Create your own copy of the project. <br>
+(ii) Clone the Repository: Download the repository to your local machine using git clone. <br>
+(iii) Install Dependencies: Navigate to the project directory and run npm install to set up all required packages. <br>
+(iv) Run the Project: Use npm start to launch the project on your local server. <br>
+(v) Contribute: Push changes and submit pull requests to contribute to the project’s development. <br>
 
 # MENTEE CONTRIBUTION
 Samrita: dealt with frontend aspects and learnt tailwind and firebase concepts and applied them. <br>
